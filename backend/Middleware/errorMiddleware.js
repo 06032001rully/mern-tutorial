@@ -1,6 +1,6 @@
 const res = require("express/lib/response")
 
-const errorHandle = (err, req, next) => {
+const errorHandler = (err, req, next) => {
     const statusCode = res.statusCode ? res.statuscode : 500
 
     res.status(StatusCode)
